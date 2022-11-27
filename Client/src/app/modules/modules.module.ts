@@ -2,11 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderModule } from './header/header.module';
 import { FooterModule } from './footer/footer.module';
+import { CategoriesComponent } from './categories/categories.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    CategoriesComponent
+  ],
   imports: [
     CommonModule,
     HeaderModule,
@@ -14,7 +17,8 @@ import { FooterModule } from './footer/footer.module';
   ],
   exports: [
     HeaderModule,
-    FooterModule
+    FooterModule,
+    CategoriesComponent
   ]
 })
 export class ModulesModule { }
